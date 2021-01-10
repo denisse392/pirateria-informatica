@@ -2,26 +2,42 @@
 
 <head>
 
+# -*- coding: utf-8 -*-
+
+file = 'file.csv'
+outfile = 'out.csv'
+
+f = open(file, 'rb')
+
+# Windows Comma Separated (.csv) ~ ISO-8859-2 | CP1252
+content = unicode(f.read(), 'CP1252')  
+f.close()
+
+out = open(outfile, 'wb')
+out.write(content.encode('utf-8'))
+out.close()
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="description" content="PiraterÌa inform·tica">
 
-<meta name="description" content="Tipos de pirateria inform·tica">
+<meta name="description" content="Pirater√≠a inform√°tica">
 
-<meta name="description" content="Piratas inform·ticos">
+<meta name="description" content="Tipos de pirateria inform√°tica">
 
-<meta name="description" content="La piraterÌa es un tÈrmino popularizado para referirse a la copia de obras literarias">
+<meta name="description" content="Piratas inform√°ticos">
 
-<meta name="description" content="PiraterÌa inform·tica en MÈxico">
+<meta name="description" content="La pirater√≠a es un t√©rmino popularizado para referirse a la copia de obras literarias">
 
-<meta name="description" content="Los piratas inform·ticos, tambiÈn conocidos como hackers, al igual que como ocurre en el comercio marÌtimo o en las rutas, est·n al acecho para interceptar la navegaciÛn y el traslado de esa valiosa informaciÛn para usarla para fines malintencionados y su propio financiamiento.">
+<meta name="description" content="Pirater√≠a inform√°tica en M√©xico">
 
-<meta name="description" content="En estadÌsticas realizadas en MÈxico, basadas en entrevistas a consumidores, vendedores, distribuidores y productores de piraterÌa, es penoso notar que solo un bajo porcentaje de la poblaciÛn manifestÛ inquietud ante la posibilidad de que la piraterÌa fuera un foco productivo de corrupciÛn, contrario sensu, la mayorÌa de los encuestados indicaron que sabÌan que la venta y adquisiciÛn de bienes piratas es ilegal, justificando sus acciones en la necesidad econÛmica y la falta de oportunidades.">
+<meta name="description" content="Los piratas inform√°ticos, tambi√©n conocidos como hackers, al igual que como ocurre en el comercio mar√≠timo o en las rutas, est√°n al acecho para interceptar la navegaci√≥n y el traslado de esa valiosa informaci√≥n para usarla para fines malintencionados y su propio financiamiento.">
 
-<meta name="description" content="El combate a la piraterÌa no ha sido exitoso. Diversos estudios seÒalan que muchos millones de mexicanos consumen piraterÌa fÌsica y digital, no obstante que existen leyes administrativas y penales que sancionan severamente esa actividad ilÌcita.">
+<meta name="description" content="En estad√≠sticas realizadas en M√©xico, basadas en entrevistas a consumidores, vendedores, distribuidores y productores de pirater√≠a, es penoso notar que solo un bajo porcentaje de la poblaci√≥n manifest√≥ inquietud ante la posibilidad de que la pirater√≠a fuera un foco productivo de corrupci√≥n, contrario sensu, la mayor√≠a de los encuestados indicaron que sab√≠an que la venta y adquisici√≥n de bienes piratas es ilegal, justificando sus acciones en la necesidad econ√≥mica y la falta de oportunidades.">
 
-<meta name="description" content="CÛmo combatir la pirateria inform·tica">
+<meta name="description" content="El combate a la pirater√≠a no ha sido exitoso. Diversos estudios se√±alan que muchos millones de mexicanos consumen pirater√≠a f√≠sica y digital, no obstante que existen leyes administrativas y penales que sancionan severamente esa actividad il√≠cita.">
 
-<title>PiraterÌa inform·tica</title>
+<meta name="description" content="C√≥mo combatir la pirateria inform√°tica">
+
+<title>Pirater√≠a inform√°tica</title>
 
 </head>
 
@@ -42,9 +58,9 @@
 <br>
 <center><table border="0" bgcolor="f1ebff" width="40%">
 <tr>
-<td><br><br><br><br><center><p><h3>ÕNDICE</h3></p>
+<td><br><br><br><br><center><p><h3>√çNDICE</h3></p>
 </center>
-<center><p><font color="black" face="arial"><a href="#QU… ES">1. øQU… ES?</a></p>
+<center><p><font color="black" face="arial"><a href="#QU√â ES">1. ¬øQU√â ES?</a></p>
 
 <p><a href="#TIPOS">2. TIPOS</a></p>
 
@@ -52,13 +68,13 @@
 
 <p><a href="#CONSECUENCIAS">4. CONSECUENCIAS</p>
 
-<p><a href="#PIRATAS">5. PIRATAS INFORM¡TICOS</a></p>
+<p><a href="#PIRATAS">5. PIRATAS INFORM√ÅTICOS</a></p>
 
-<p><a href="#TIPOS DE P">6. TIPOS DE PIRATAS INFORM¡TICOS</a></p>
+<p><a href="#TIPOS DE P">6. TIPOS DE PIRATAS INFORM√ÅTICOS</a></p>
 
-<p><a href="#P EN MEXICO">7. PIRATERÕA INFORM¡TICA EN M…XICO</a></p>
+<p><a href="#P EN MEXICO">7. PIRATER√çA INFORM√ÅTICA EN M√âXICO</a></p>
 
-<p><a href="#COMBATIR">8. øC”MO COMBATIR LA PIRATERÕA INFORM¡TICA?</a></p><br><br><br><br></center></td>
+<p><a href="#COMBATIR">8. ¬øC√ìMO COMBATIR LA PIRATER√çA INFORM√ÅTICA?</a></p><br><br><br><br></center></td>
 </tr>
 </table></center>
 <br>
@@ -68,11 +84,11 @@
 <br>
 <center><table border="0" bgcolor="#e8bbfc" width="80%">
 <tr>
-<td><center><font color="blue" face="segoe print"><a name="QU… ES"><p><h2>øQU… ES?</h2></p></a></center>
-<p style="text-align:justify;"><font color="black" face="arial">La piraterÌa es un tÈrmino popularizado para referirse a la copia de obras literarias, musicales, audiovisuales o de software efectuada sin el consentimiento del titular de los derechos de autor.
-Consta de romper la seguridad de determinados programas, la mayorÌa de las veces populares y muy necesarios para llevar a cabo determinadas tareas, como Photoshop o Windows, para poder eliminar o bloquear cualquier cÛdigo que impida su libre uso, para luego ser distribuidos con la firma de alg˙n grupo o ìTeamî de manera gratuita en las principales redes de intercambio como Torrent o eMule, de manera bastante frecuente.</p>
+<td><center><font color="blue" face="segoe print"><a name="QU√â ES"><p><h2>¬øQU√â ES?</h2></p></a></center>
+<p style="text-align:justify;"><font color="black" face="arial">La pirater√≠a es un t√©rmino popularizado para referirse a la copia de obras literarias, musicales, audiovisuales o de software efectuada sin el consentimiento del titular de los derechos de autor.
+Consta de romper la seguridad de determinados programas, la mayor√≠a de las veces populares y muy necesarios para llevar a cabo determinadas tareas, como Photoshop o Windows, para poder eliminar o bloquear cualquier c√≥digo que impida su libre uso, para luego ser distribuidos con la firma de alg√∫n grupo o ‚ÄúTeam‚Äù de manera gratuita en las principales redes de intercambio como Torrent o eMule, de manera bastante frecuente.</p>
 
-<p style="text-align:justify;">Es com˙n pensar que la piraterÌa es en cierto modo "justa" debido al punto en que los hackers le arrebatan a los empresarios ricos su software, software valioso y que llevÛ aÒos de duro trabajo desarrollarlo, para d·rselo a aquellos que no est·n en condiciones de poder adquirirlo, pero no nos engaÒemos, la piraterÌa tambiÈn es un negocio que mueve muchÌsimo dinero, nada se hace de manera desinteresada.</p></td>
+<p style="text-align:justify;">Es com√∫n pensar que la pirater√≠a es en cierto modo "justa" debido al punto en que los hackers le arrebatan a los empresarios ricos su software, software valioso y que llev√≥ a√±os de duro trabajo desarrollarlo, para d√°rselo a aquellos que no est√°n en condiciones de poder adquirirlo, pero no nos enga√±emos, la pirater√≠a tambi√©n es un negocio que mueve much√≠simo dinero, nada se hace de manera desinteresada.</p></td>
 </tr>
 </table></center>
 <br>
@@ -87,22 +103,22 @@ Consta de romper la seguridad de determinados programas, la mayorÌa de las veces
 <tr>
 
 <td><center><p><font color="blue" face="segoe print"><a name="TIPOS"><h2>TIPOS</h2></a></p></center>
-<p style="text-align:justify;"><font color="black" face="arial">Existen varias modalidades de piraterÌa de software, las cuales corresponden a un tipo especÌfico de piraterÌa.</p>
-<p>PiraterÌa de usuario final:</p>
+<p style="text-align:justify;"><font color="black" face="arial">Existen varias modalidades de pirater√≠a de software, las cuales corresponden a un tipo espec√≠fico de pirater√≠a.</p>
+<p>Pirater√≠a de usuario final:</p>
 
-<p style="text-align:justify;">La piraterÌa de usuario final tiene lugar cuando una ˙nica copia con licencia de un software es instalada en diferentes computadoras. Otra forma com˙n de piraterÌa de usuario final ocurre cuando se utiliza una versiÛn ´crackeadaª del software. Un software crackeado es aquel en el que el usuario ingresa una clave de registro (que invalida la protecciÛn de copia), o cÛdigos clave generados ilegalmente que desbloquean una versiÛn limitada.</p>
-<p>PiraterÌa de revendedor:</p>
+<p style="text-align:justify;">La pirater√≠a de usuario final tiene lugar cuando una √∫nica copia con licencia de un software es instalada en diferentes computadoras. Otra forma com√∫n de pirater√≠a de usuario final ocurre cuando se utiliza una versi√≥n ¬´crackeada¬ª del software. Un software crackeado es aquel en el que el usuario ingresa una clave de registro (que invalida la protecci√≥n de copia), o c√≥digos clave generados ilegalmente que desbloquean una versi√≥n limitada.</p>
+<p>Pirater√≠a de revendedor:</p>
 
-<p style="text-align:justify;">La piraterÌa de revendedor ocurre cuando un revendedor distribuye copias de un ˙nico software a diferentes clientes; eso se da principalmente con los sistemas operativos y softwares precargados en computadoras nuevas. El usuario no recibe los discos, manuales y registro del software. La piraterÌa de revendedor acontece tambiÈn cuando se venden versiones falsificadas de software, imitando embalajes, sellos y documentos del software original. Los signos que indican piraterÌa de revendedor son varios usuarios con el mismo n˙mero de serie, falta de documentaciÛn original, una configuraciÛn incompleta y la ausencia o insuficiencia de documentaciÛn original.</p>
-<p>PiraterÌa de internet:</p>
+<p style="text-align:justify;">La pirater√≠a de revendedor ocurre cuando un revendedor distribuye copias de un √∫nico software a diferentes clientes; eso se da principalmente con los sistemas operativos y softwares precargados en computadoras nuevas. El usuario no recibe los discos, manuales y registro del software. La pirater√≠a de revendedor acontece tambi√©n cuando se venden versiones falsificadas de software, imitando embalajes, sellos y documentos del software original. Los signos que indican pirater√≠a de revendedor son varios usuarios con el mismo n√∫mero de serie, falta de documentaci√≥n original, una configuraci√≥n incompleta y la ausencia o insuficiencia de documentaci√≥n original.</p>
+<p>Pirater√≠a de internet:</p>
 
-<p style="text-align:justify;">La piraterÌa de Internet ocurre cuando se pone a disposiciÛn de los usuarios una transferencia electrÛnica de software con derechos de autor. Operadores de sistemas y/o usuarios ponen a disposiciÛn materiales con derechos de autor en internet para que otros puedan copiarlos y usarlos sin la licencia correspondiente. Frecuentemente, los hackers distribuyen o venden software ´crackeadoª. El creador no recibe ninguna suma de dinero por su software distribuido de esta manera. Es una violaciÛn de los derechos de autor del creador.</p>
-<p>ViolaciÛn de marca registrada:</p>
+<p style="text-align:justify;">La pirater√≠a de Internet ocurre cuando se pone a disposici√≥n de los usuarios una transferencia electr√≥nica de software con derechos de autor. Operadores de sistemas y/o usuarios ponen a disposici√≥n materiales con derechos de autor en internet para que otros puedan copiarlos y usarlos sin la licencia correspondiente. Frecuentemente, los hackers distribuyen o venden software ¬´crackeado¬ª. El creador no recibe ninguna suma de dinero por su software distribuido de esta manera. Es una violaci√≥n de los derechos de autor del creador.</p>
+<p>Violaci√≥n de marca registrada:</p>
 
-<p style="text-align:justify;">Esta infracciÛn sucede cuando una empresa no acreditada se presenta como negociante autorizado, tÈcnico, proveedor de soporte o revendedor, o usa indebidamente un nombre de marca registrada.</p>
-<p>Otros tipos de piraterÌa:</p>
+<p style="text-align:justify;">Esta infracci√≥n sucede cuando una empresa no acreditada se presenta como negociante autorizado, t√©cnico, proveedor de soporte o revendedor, o usa indebidamente un nombre de marca registrada.</p>
+<p>Otros tipos de pirater√≠a:</p>
 
-<p style="text-align:justify;">Otra tÈcnica utilizada por piratas de software es obtener ilegalmente una copia registrada de software. El pirata compra una ˙nica copia y la utiliza en varias computadoras. Otra tÈcnica es la compra de software con tarjetas de crÈdito clonadas o robadas.</p></td>
+<p style="text-align:justify;">Otra t√©cnica utilizada por piratas de software es obtener ilegalmente una copia registrada de software. El pirata compra una √∫nica copia y la utiliza en varias computadoras. Otra t√©cnica es la compra de software con tarjetas de cr√©dito clonadas o robadas.</p></td>
 
 </tr>
 
@@ -122,26 +138,26 @@ Consta de romper la seguridad de determinados programas, la mayorÌa de las veces
 <tr>
 
 <td><br><br><br><center><p><font color="blue" face="segoe print"><a name="CAUSAS"><h2>CAUSAS</h2></a></p></center>
-<p><font color="black" face="arial">Escasa sensibilizaciÛn del p˙blico</p>
-<p style="text-align:justify;">La piraterÌa carece del estigma social negativo que sensibilizarÌa al p˙blico sobre el hecho de que se trata de una actividad delictiva. Con frecuencia, el p˙blico no se da cuenta de que al comprar productos pirateados o participar en actividades ilÌcitas puede estar contribuyendo a la proliferaciÛn de pr·cticas ilegales.</p>
+<p><font color="black" face="arial">Escasa sensibilizaci√≥n del p√∫blico</p>
+<p style="text-align:justify;">La pirater√≠a carece del estigma social negativo que sensibilizar√≠a al p√∫blico sobre el hecho de que se trata de una actividad delictiva. Con frecuencia, el p√∫blico no se da cuenta de que al comprar productos pirateados o participar en actividades il√≠citas puede estar contribuyendo a la proliferaci√≥n de pr√°cticas ilegales.</p>
 <p>Alta demanda de bienes culturales:</p>
 
-<p style="text-align:justify;">La demanda de m˙sica, pelÌculas, libros y programas inform·ticos es muy alta, lo que podrÌa acarrear el desarrollo de un mercado ilegal para cubrir las necesidades de los consumidores.</p>
-<p>Malentendidos sobre la piraterÌa:</p>
+<p style="text-align:justify;">La demanda de m√∫sica, pel√≠culas, libros y programas inform√°ticos es muy alta, lo que podr√≠a acarrear el desarrollo de un mercado ilegal para cubrir las necesidades de los consumidores.</p>
+<p>Malentendidos sobre la pirater√≠a:</p>
 
-<p style="text-align:justify;">El p˙blico ve con frecuencia la piraterÌa como una manera de lograr un acceso m·s barato a versiones de una obra de igual calidad que la original, pero ignora las repercusiones que esa actividad ejerce en la creatividad, las industrias creativas y los sectores conexos.</p>
-<p>ProtecciÛn ineficaz de la propiedad intelectual y poco respeto de los derechos:</p>
+<p style="text-align:justify;">El p√∫blico ve con frecuencia la pirater√≠a como una manera de lograr un acceso m√°s barato a versiones de una obra de igual calidad que la original, pero ignora las repercusiones que esa actividad ejerce en la creatividad, las industrias creativas y los sectores conexos.</p>
+<p>Protecci√≥n ineficaz de la propiedad intelectual y poco respeto de los derechos:</p>
 
-<p style="text-align:justify;">La existencia de leyes mal redactadas o incompletas, y su aplicaciÛn vacilante, contribuyen directamente al aumento de la piraterÌa.</p>
+<p style="text-align:justify;">La existencia de leyes mal redactadas o incompletas, y su aplicaci√≥n vacilante, contribuyen directamente al aumento de la pirater√≠a.</p>
 <p>El precio elevado de los bienes culturales:</p>
 
-<p style="text-align:justify;">La creaciÛn, producciÛn y distribuciÛn de bienes culturales son costosas y los m˙ltiples costos que se aÒaden antes de que el producto llegue al consumidor aumentan el precio del producto final. En consecuencia, se considera que la pobreza es un factor importante que contribuye a la ampliaciÛn de la piraterÌa. Debido a que los precios de los productos originales resultan con frecuencia muy elevados para el p˙blico, existe un mercado permanente para los bienes pirateados, que son m·s baratos.</p>
+<p style="text-align:justify;">La creaci√≥n, producci√≥n y distribuci√≥n de bienes culturales son costosas y los m√∫ltiples costos que se a√±aden antes de que el producto llegue al consumidor aumentan el precio del producto final. En consecuencia, se considera que la pobreza es un factor importante que contribuye a la ampliaci√≥n de la pirater√≠a. Debido a que los precios de los productos originales resultan con frecuencia muy elevados para el p√∫blico, existe un mercado permanente para los bienes pirateados, que son m√°s baratos.</p>
 <p>Dificultad de acceso a las obras originales:</p>
 
-<p style="text-align:justify;">Las existencias de productos legÌtimos en tiendas y bibliotecas son a veces insuficientes, en especial en los paÌses en desarrollo. Las medidas tÈcnicas de protecciÛn de los productos en formato digital se consideran obst·culos al acceso a ciertas copias, lo que, por tanto, limita la disponibilidad de las obras originales para el p˙blico en general.</p>
-<p>Las elevadas ganancias de los piratas inform·ticos:</p>
+<p style="text-align:justify;">Las existencias de productos leg√≠timos en tiendas y bibliotecas son a veces insuficientes, en especial en los pa√≠ses en desarrollo. Las medidas t√©cnicas de protecci√≥n de los productos en formato digital se consideran obst√°culos al acceso a ciertas copias, lo que, por tanto, limita la disponibilidad de las obras originales para el p√∫blico en general.</p>
+<p>Las elevadas ganancias de los piratas inform√°ticos:</p>
 
-<p style="text-align:justify;">Los piratas no cubren ning˙n gasto comparable a los de la producciÛn de bienes culturales originales, debido a que la inversiÛn inicial para la reproducciÛn y distribuciÛn ilÌcitas es limitada. Por eso, la posibilidad de obtener ganancias considerables y de manera f·cil es otra de las razones que explican la ampliaciÛn y persistencia de la piraterÌa.</p></td>
+<p style="text-align:justify;">Los piratas no cubren ning√∫n gasto comparable a los de la producci√≥n de bienes culturales originales, debido a que la inversi√≥n inicial para la reproducci√≥n y distribuci√≥n il√≠citas es limitada. Por eso, la posibilidad de obtener ganancias considerables y de manera f√°cil es otra de las razones que explican la ampliaci√≥n y persistencia de la pirater√≠a.</p></td>
 
 </tr>
 
@@ -161,22 +177,22 @@ Consta de romper la seguridad de determinados programas, la mayorÌa de las veces
 
 <td><center><p><font color="blue" face="segoe print"><a name="CONSECUENCIAS"><h2>CONSECUENCIAS</h2></a></p></center>
 <p><font color="black" face="arial">Repercusiones en la creatividad:</p>
-<p style="text-align:justify;">La piraterÌa puede conducir al Èxodo de creadores talentosos, lo que priva a los paÌses de la riqueza que representa la creatividad local. Por ejemplo, la creciente piraterÌa en la mayor parte de los paÌses de ¡frica ha llevado a muchos artistas a salir de su paÌs para crear y presentar sus obras en Europa, donde son mejor retribuidos, gracias al sistema vigente de derecho de autor.</p>
+<p style="text-align:justify;">La pirater√≠a puede conducir al √©xodo de creadores talentosos, lo que priva a los pa√≠ses de la riqueza que representa la creatividad local. Por ejemplo, la creciente pirater√≠a en la mayor parte de los pa√≠ses de √Åfrica ha llevado a muchos artistas a salir de su pa√≠s para crear y presentar sus obras en Europa, donde son mejor retribuidos, gracias al sistema vigente de derecho de autor.</p>
 <p>Repercusiones en la diversidad de las expresiones culturales:</p>
 
-<p style="text-align:justify;">Quienes se dedican a la piraterÌa se interesan principalmente en una pequeÒa parte de los ·lbumes musicales o las pelÌculas m·s populares en el plano internacional y, por lo general, demuestran poco o ning˙n interÈs en ofrecer obras de artistas locales.</p>
+<p style="text-align:justify;">Quienes se dedican a la pirater√≠a se interesan principalmente en una peque√±a parte de los √°lbumes musicales o las pel√≠culas m√°s populares en el plano internacional y, por lo general, demuestran poco o ning√∫n inter√©s en ofrecer obras de artistas locales.</p>
 <p>Repercusiones en las industrias culturales y el desarrollo:</p>
 
-<p style="text-align:justify;">La piraterÌa destruye los cimientos de las empresas culturales locales e influye de manera negativa en sus relaciones con los asociados extranjeros. Adem·s, la piraterÌa socava la industria legal, que no puede competir de manera justa con los bajos precios derivados de la actividad ilÌcita. De esa manera, obstaculiza no sÛlo el desarrollo de las industrias culturales, sino tambiÈn el desarrollo econÛmico en general, ya que las empresas no pueden crecer y extenderse de manera sostenible.</p>
+<p style="text-align:justify;">La pirater√≠a destruye los cimientos de las empresas culturales locales e influye de manera negativa en sus relaciones con los asociados extranjeros. Adem√°s, la pirater√≠a socava la industria legal, que no puede competir de manera justa con los bajos precios derivados de la actividad il√≠cita. De esa manera, obstaculiza no s√≥lo el desarrollo de las industrias culturales, sino tambi√©n el desarrollo econ√≥mico en general, ya que las empresas no pueden crecer y extenderse de manera sostenible.</p>
 <p>Repercusiones en el empleo:</p>
 
-<p style="text-align:justify;">En tÈrminos sociales, el daÒo que sufren las empresas debido al efecto nocivo de la piraterÌa se refleja por ˙ltimo en los empleos de las industrias creativas. Los productos pirateados llevan a un estancamiento de la industria legÌtima, que a su vez ofrece menos empleos.</p>
-<p>Repercusiones en la inversiÛn extranjera:</p>
+<p style="text-align:justify;">En t√©rminos sociales, el da√±o que sufren las empresas debido al efecto nocivo de la pirater√≠a se refleja por √∫ltimo en los empleos de las industrias creativas. Los productos pirateados llevan a un estancamiento de la industria leg√≠tima, que a su vez ofrece menos empleos.</p>
+<p>Repercusiones en la inversi√≥n extranjera:</p>
 
-<p style="text-align:justify;">Las inversiones en el sector cultural de un paÌs pueden ser importantes y duraderas cuando los inversores encuentran un sistema adecuado de derecho de autor, asÌ como un verdadero respeto del mismo. Si falta alguna variable de esta fÛrmula, el paÌs pierde la capacidad de atraer a esas inversiones y desarrollar sus propias industrias culturales, junto con los beneficios complementarios del aumento de oportunidades de empleo, creaciÛn de riqueza e ingresos fiscales.</p>
-<p>VÌnculos con las organizaciones delictivas:</p>
+<p style="text-align:justify;">Las inversiones en el sector cultural de un pa√≠s pueden ser importantes y duraderas cuando los inversores encuentran un sistema adecuado de derecho de autor, as√≠ como un verdadero respeto del mismo. Si falta alguna variable de esta f√≥rmula, el pa√≠s pierde la capacidad de atraer a esas inversiones y desarrollar sus propias industrias culturales, junto con los beneficios complementarios del aumento de oportunidades de empleo, creaci√≥n de riqueza e ingresos fiscales.</p>
+<p>V√≠nculos con las organizaciones delictivas:</p>
 
-<p style="text-align:justify;">La piraterÌa es un delito que ocasiona vÌctimas. Con frecuencia, constituye una fuente lucrativa de ingresos para importantes organizaciones delictivas internacionales. Las cuantiosas ganancias que genera financian en muchos casos otros tipos de delitos graves, como el tr·fico de seres humanos y armas, el tr·fico de drogas, la estafa mediante tarjetas de crÈdito y el lavado de dinero.</p></td>
+<p style="text-align:justify;">La pirater√≠a es un delito que ocasiona v√≠ctimas. Con frecuencia, constituye una fuente lucrativa de ingresos para importantes organizaciones delictivas internacionales. Las cuantiosas ganancias que genera financian en muchos casos otros tipos de delitos graves, como el tr√°fico de seres humanos y armas, el tr√°fico de drogas, la estafa mediante tarjetas de cr√©dito y el lavado de dinero.</p></td>
 
 </tr>
 
@@ -199,10 +215,10 @@ Consta de romper la seguridad de determinados programas, la mayorÌa de las veces
 <tr>
 
 <td>
-<center><p><font color="blue" face="segoe print"><a name="PIRATAS"><h2>PIRATAS INFORM¡TICOS</h2></a></p></center>
-<p style="text-align:justify;"><font color="black" face="arial">Los piratas inform·ticos, tambiÈn conocidos como hackers, al igual que como ocurre en el comercio marÌtimo o en las rutas, est·n al acecho para interceptar la navegaciÛn y el traslado de esa valiosa informaciÛn para usarla para fines malintencionados y su propio financiamiento.
-Para entender bien de quÈ hablamos cuando nos referimos a un pirata inform·tico, vamos a definir a un ciberdelincuente como un experto en tecnologÌa que utiliza sus habilidades y conocimientos para realizar operaciones ilegales. Las mismas le permiten acceder a la informaciÛn confidencial de otros usuarios.</p>
-<p style="text-align:justify;">Los hackers suelen ser los mejores programadores, pero han usado su capacidad para minar la red con trampas que pueden causar importantes pÈrdidas monetarias reales tanto en empresas como en personas individuales</p></td>
+<center><p><font color="blue" face="segoe print"><a name="PIRATAS"><h2>PIRATAS INFORM√ÅTICOS</h2></a></p></center>
+<p style="text-align:justify;"><font color="black" face="arial">Los piratas inform√°ticos, tambi√©n conocidos como hackers, al igual que como ocurre en el comercio mar√≠timo o en las rutas, est√°n al acecho para interceptar la navegaci√≥n y el traslado de esa valiosa informaci√≥n para usarla para fines malintencionados y su propio financiamiento.
+Para entender bien de qu√© hablamos cuando nos referimos a un pirata inform√°tico, vamos a definir a un ciberdelincuente como un experto en tecnolog√≠a que utiliza sus habilidades y conocimientos para realizar operaciones ilegales. Las mismas le permiten acceder a la informaci√≥n confidencial de otros usuarios.</p>
+<p style="text-align:justify;">Los hackers suelen ser los mejores programadores, pero han usado su capacidad para minar la red con trampas que pueden causar importantes p√©rdidas monetarias reales tanto en empresas como en personas individuales</p></td>
 
 </tr>
 
@@ -220,19 +236,19 @@ Para entender bien de quÈ hablamos cuando nos referimos a un pirata inform·tico,
 
 <tr>
 
-<td><center><p><font color="blue" face="segoe print"><a name="TIPOS DE P"><h2>TIPOS DE PIRATAS INFORM¡TICOS</h2></a></p></center>
-<p style="text-align:justify;"><font color="black" face="arial">En tÈrminos generales podemos definir dos grandes tipos de piratas inform·ticos: los white hats y los black hats( Hackers de sombrero blanco y los Hackers de sombrero negro). Los hackers Èticos y los hackers criminales.</p>
-<p style="text-align:justify;">Los hackers de sombrero blanco son profesionales altamente cotizados en el mercado, ellos pueden encontrar r·pidamente las vulnerabilidades de las empresas para corregir las fallas de seguridad y disminuir las debilidades de los cÛdigos.</p>
-<p style="text-align:justify;">Los hackers de sombrero negro son aquellos programadores que tambiÈn buscan las debilidades del cÛdigo, pero su objetivo es el delito y no la mejora de la seguridad del sistema.</p>
-<p style="text-align:justify;">Entre los motivos m·s populares que pueden motivar el ataque del criminal inform·tico se encuentra la posibilidad de destruir, secuestrar o difundir informaciÛn confidencial.
-No todos los hackers quieren dinero, algunos buscan desafiar al sistema, generar pÈrdidas en corporaciones especÌficas o simplemente perpetrar daÒos a la identidad corporativa.</p>
+<td><center><p><font color="blue" face="segoe print"><a name="TIPOS DE P"><h2>TIPOS DE PIRATAS INFORM√ÅTICOS</h2></a></p></center>
+<p style="text-align:justify;"><font color="black" face="arial">En t√©rminos generales podemos definir dos grandes tipos de piratas inform√°ticos: los white hats y los black hats( Hackers de sombrero blanco y los Hackers de sombrero negro). Los hackers √©ticos y los hackers criminales.</p>
+<p style="text-align:justify;">Los hackers de sombrero blanco son profesionales altamente cotizados en el mercado, ellos pueden encontrar r√°pidamente las vulnerabilidades de las empresas para corregir las fallas de seguridad y disminuir las debilidades de los c√≥digos.</p>
+<p style="text-align:justify;">Los hackers de sombrero negro son aquellos programadores que tambi√©n buscan las debilidades del c√≥digo, pero su objetivo es el delito y no la mejora de la seguridad del sistema.</p>
+<p style="text-align:justify;">Entre los motivos m√°s populares que pueden motivar el ataque del criminal inform√°tico se encuentra la posibilidad de destruir, secuestrar o difundir informaci√≥n confidencial.
+No todos los hackers quieren dinero, algunos buscan desafiar al sistema, generar p√©rdidas en corporaciones espec√≠ficas o simplemente perpetrar da√±os a la identidad corporativa.</p>
 <p style="text-align:justify;">Dentro de los black hat hackers podemos encontrar:</p>
 
-<p style="text-align:justify;">Crackers: Expertos que buscan hacerse de contraseÒas para o invadir equipos con determinados virus para modificar el funcionamiento de determinados software.</p>
-<p style="text-align:justify;">Phreakers: Son piratas inform·ticos que se dedican exclusivamente al atentado en el sector de las telecomunicaciones.</p>
+<p style="text-align:justify;">Crackers: Expertos que buscan hacerse de contrase√±as para o invadir equipos con determinados virus para modificar el funcionamiento de determinados software.</p>
+<p style="text-align:justify;">Phreakers: Son piratas inform√°ticos que se dedican exclusivamente al atentado en el sector de las telecomunicaciones.</p>
 <p style="text-align:justify;">Grey hackers: Los hackers grises, esos que se dedican a traspasar los niveles de seguridad de diferentes empresas para poder ofrecerles en consecuencia servicios contra las vulnerabilidades de los sistemas que previamente interceptaron.</p>
-<p style="text-align:justify;">Newbie o neÛfitos: En tÈrminos coloquiales del lunfardo los podrÌamos llamar ìlos pichisî, los piratas nuevos e inexpertos que est·n haciendo experimentaciones pero que son m·s propensos a dejar rastros.</p>
-<p style="text-align:justify;">Hackivistas: Los piratas inform·ticos m·s populares en los medios de comunicaciÛn ya que su actividad no est· directamente motivada por fines econÛmicos sino que buscan defender alguna cuestiÛn social, polÌtica y/o religiosa. Por ejemplo, los ataques de Anonymous contra el mundial de f˙tbol en Brasil 2014.</P></td>
+<p style="text-align:justify;">Newbie o ne√≥fitos: En t√©rminos coloquiales del lunfardo los podr√≠amos llamar ‚Äúlos pichis‚Äù, los piratas nuevos e inexpertos que est√°n haciendo experimentaciones pero que son m√°s propensos a dejar rastros.</p>
+<p style="text-align:justify;">Hackivistas: Los piratas inform√°ticos m√°s populares en los medios de comunicaci√≥n ya que su actividad no est√° directamente motivada por fines econ√≥micos sino que buscan defender alguna cuesti√≥n social, pol√≠tica y/o religiosa. Por ejemplo, los ataques de Anonymous contra el mundial de f√∫tbol en Brasil 2014.</P></td>
 
 </tr>
 
@@ -255,10 +271,10 @@ No todos los hackers quieren dinero, algunos buscan desafiar al sistema, generar
 
 <tr>
 
-<td><center><p><font color="blue" face="segoe print"><a name="P EN MEXICO"><h2>PIRATERIA INFORM¡TICA EN M…XICO</h2></a></p></center>
-<p style="text-align:justify;"><font color="black" face="arial">Seg˙n estadÌsticas de la C·mara Nacional de la Industria de TransformaciÛn (Canacintra) MÈxico ocupa el cuarto lugar mundial en los delitos de piraterÌa y contrabando y el primer sitio en AmÈrica Latina, de igual forma la piraterÌa cuesta el 1.25% del PIB, y adem·s constituye hoy en dÌa el segundo delito m·s preocupante en el paÌs despuÈs del narcotr·fico.</p>
-<p style="text-align:justify;">Pese a que a nivel internacional, MÈxico ha firmado m˙ltiples tratados, actas y convenios con el propÛsito de erradicar la piraterÌa, es triste darse cuenta de que la poblaciÛn no est· concientizada de que este delito, propicia m·s ilÌcitos como la corrupciÛn, cohecho, secuestro y extorsiÛn, entre otros, y que lejos de beneficiar perjudican a todo el PaÌs.
-En estadÌsticas realizadas en MÈxico, basadas en entrevistas a consumidores, vendedores, distribuidores y productores de piraterÌa, es penoso notar que solo un bajo porcentaje de la poblaciÛn manifestÛ inquietud ante la posibilidad de que la piraterÌa fuera un foco productivo de corrupciÛn, contrario sensu, la mayorÌa de los encuestados indicaron que sabÌan que la venta y adquisiciÛn de bienes piratas es ilegal, justificando sus acciones en la necesidad econÛmica y la falta de oportunidades.</p></td>
+<td><center><p><font color="blue" face="segoe print"><a name="P EN MEXICO"><h2>PIRATERIA INFORM√ÅTICA EN M√âXICO</h2></a></p></center>
+<p style="text-align:justify;"><font color="black" face="arial">Seg√∫n estad√≠sticas de la C√°mara Nacional de la Industria de Transformaci√≥n (Canacintra) M√©xico ocupa el cuarto lugar mundial en los delitos de pirater√≠a y contrabando y el primer sitio en Am√©rica Latina, de igual forma la pirater√≠a cuesta el 1.25% del PIB, y adem√°s constituye hoy en d√≠a el segundo delito m√°s preocupante en el pa√≠s despu√©s del narcotr√°fico.</p>
+<p style="text-align:justify;">Pese a que a nivel internacional, M√©xico ha firmado m√∫ltiples tratados, actas y convenios con el prop√≥sito de erradicar la pirater√≠a, es triste darse cuenta de que la poblaci√≥n no est√° concientizada de que este delito, propicia m√°s il√≠citos como la corrupci√≥n, cohecho, secuestro y extorsi√≥n, entre otros, y que lejos de beneficiar perjudican a todo el Pa√≠s.
+En estad√≠sticas realizadas en M√©xico, basadas en entrevistas a consumidores, vendedores, distribuidores y productores de pirater√≠a, es penoso notar que solo un bajo porcentaje de la poblaci√≥n manifest√≥ inquietud ante la posibilidad de que la pirater√≠a fuera un foco productivo de corrupci√≥n, contrario sensu, la mayor√≠a de los encuestados indicaron que sab√≠an que la venta y adquisici√≥n de bienes piratas es ilegal, justificando sus acciones en la necesidad econ√≥mica y la falta de oportunidades.</p></td>
 
 </tr>
 
@@ -275,10 +291,10 @@ En estadÌsticas realizadas en MÈxico, basadas en entrevistas a consumidores, ven
 
 <tr>
 
-<td><center><p><font color="blue" face="segoe print"><a name="COMBATIR"><h2>øCOMO COMBATIR LA PIRATERÕA INFORM¡TICA?</h2></a></p></center>
-<p style="text-align:justify;"><font color="black" face="arial">El combate a la piraterÌa no ha sido exitoso. Diversos estudios seÒalan que muchos millones de mexicanos consumen piraterÌa fÌsica y digital, no obstante que existen leyes administrativas y penales que sancionan severamente esa actividad ilÌcita. El pasado 1∞ de julio se adicionaron varios delitos en el CÛdigo Penal Federal en materia de derechos de autor. Por ejemplo, el artÌculo 427 bis sanciona con prisiÛn de seis meses a seis aÒos y de quinientos a mil dÌas multa a quien, a sabiendas y con fines de lucro, ìeluda sin autorizaciÛn cualquier medida tecnolÛgica de protecciÛn efectiva que utilicen los productores de fonogramas, artistas, intÈrpretes o ejecutantes, asÌ como autores de cualquier obra protegida por derechos de autor o derechos conexosî.
-Esta reforma se realizÛ en el marco de los compromisos del Estado mexicano al firmar el nuevo Tratado entre los Estados Unidos Mexicanos, los Estados Unidos de AmÈrica y Canad· (T-MEC). Pero, ahora, se requieren nuevos conocimientos y estrategias para perseguir estos delitos, pues la policÌa y peritos convencionales no est·n capacitados en esta materia. El futuro de las creaciones artÌsticas, literarias, tecnolÛgicas, asÌ como el beneficio econÛmico de las empresas y personas que participan en la cadena productiva de la economÌa formal dependen de ello.</p>
-<p style="text-align:justify;">Independientemente de los medios que existen para regular los derechos de propiedad intelectual, (que son muy poco conocidos y explotados) se deberÌan realizar adecuaciones a la legislaciÛn especial en la materia, lo cual permitirÌa reconocer y prever las conductas violatorias, poniendo al alcance de autores y titulares las herramientas eficaces en la defensa de sus derechos; de igual forma, elevar las penas y sanciones en la tipificaciÛn de los delitos, asÌ como que el Estado desarrolle campaÒas p˙blicas de concientizaciÛn y que desde el nivel b·sico se enseÒen los valores y respeto por las obras de propiedad intelectual, manifestando que su violaciÛn es delito grave y de un riesgo latente que nos afecta, creando desempleo, falta de desarrollo empresarial, des·nimo de la inversiÛn en el PaÌs y por ende cero crecimiento.</p></td>
+<td><center><p><font color="blue" face="segoe print"><a name="COMBATIR"><h2>¬øCOMO COMBATIR LA PIRATER√çA INFORM√ÅTICA?</h2></a></p></center>
+<p style="text-align:justify;"><font color="black" face="arial">El combate a la pirater√≠a no ha sido exitoso. Diversos estudios se√±alan que muchos millones de mexicanos consumen pirater√≠a f√≠sica y digital, no obstante que existen leyes administrativas y penales que sancionan severamente esa actividad il√≠cita. El pasado 1¬∞ de julio se adicionaron varios delitos en el C√≥digo Penal Federal en materia de derechos de autor. Por ejemplo, el art√≠culo 427 bis sanciona con prisi√≥n de seis meses a seis a√±os y de quinientos a mil d√≠as multa a quien, a sabiendas y con fines de lucro, ‚Äúeluda sin autorizaci√≥n cualquier medida tecnol√≥gica de protecci√≥n efectiva que utilicen los productores de fonogramas, artistas, int√©rpretes o ejecutantes, as√≠ como autores de cualquier obra protegida por derechos de autor o derechos conexos‚Äù.
+Esta reforma se realiz√≥ en el marco de los compromisos del Estado mexicano al firmar el nuevo Tratado entre los Estados Unidos Mexicanos, los Estados Unidos de Am√©rica y Canad√° (T-MEC). Pero, ahora, se requieren nuevos conocimientos y estrategias para perseguir estos delitos, pues la polic√≠a y peritos convencionales no est√°n capacitados en esta materia. El futuro de las creaciones art√≠sticas, literarias, tecnol√≥gicas, as√≠ como el beneficio econ√≥mico de las empresas y personas que participan en la cadena productiva de la econom√≠a formal dependen de ello.</p>
+<p style="text-align:justify;">Independientemente de los medios que existen para regular los derechos de propiedad intelectual, (que son muy poco conocidos y explotados) se deber√≠an realizar adecuaciones a la legislaci√≥n especial en la materia, lo cual permitir√≠a reconocer y prever las conductas violatorias, poniendo al alcance de autores y titulares las herramientas eficaces en la defensa de sus derechos; de igual forma, elevar las penas y sanciones en la tipificaci√≥n de los delitos, as√≠ como que el Estado desarrolle campa√±as p√∫blicas de concientizaci√≥n y que desde el nivel b√°sico se ense√±en los valores y respeto por las obras de propiedad intelectual, manifestando que su violaci√≥n es delito grave y de un riesgo latente que nos afecta, creando desempleo, falta de desarrollo empresarial, des√°nimo de la inversi√≥n en el Pa√≠s y por ende cero crecimiento.</p></td>
 
 </tr>
 
@@ -298,7 +314,7 @@ Esta reforma se realizÛ en el marco de los compromisos del Estado mexicano al fi
 
 <tr>
 
-<td><br><br><center><p><font color="black" face="segoe print"><h2>BIBLIOGRAFÕA</h2></p></center>
+<td><br><br><center><p><font color="black" face="segoe print"><h2>BIBLIOGRAF√çA</h2></p></center>
 
 <center><p><font color="black" face="arial"><a href="https://sites.google.com/site/banderaoscura/-concepto-de-pirateria-informatica
 ">https://sites.google.com/site/banderaoscura/-concepto-de-pirateria-informatica
@@ -339,7 +355,7 @@ Esta reforma se realizÛ en el marco de los compromisos del Estado mexicano al fi
 <br>
 <br>
 <center><p><img src="que es.jpeg"></p></center><br><br><br><br><br>
-<div align="right"><p><h5>⁄ltima actualizaciÛn: 8/enero/2020 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h5></p><br><br><br></td>
+<div align="right"><p><h5>√öltima actualizaci√≥n: 8/enero/2020 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h5></p><br><br><br></td>
 
 </tr>
 

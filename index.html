@@ -2,21 +2,6 @@
 
 <head>
 
-# -*- coding: utf-8 -*-
-
-file = 'file.csv'
-outfile = 'out.csv'
-
-f = open(file, 'rb')
-
-# Windows Comma Separated (.csv) ~ ISO-8859-2 | CP1252
-content = unicode(f.read(), 'CP1252')  
-f.close()
-
-out = open(outfile, 'wb')
-out.write(content.encode('utf-8'))
-out.close()
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 <meta name="description" content="Piratería informática">
